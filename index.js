@@ -1,1 +1,1 @@
-exports = require('./lib/assoc');
+module.exports = require('./lib/assoc');
