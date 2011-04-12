@@ -1,6 +1,6 @@
 {
   "name": "assoc",
-  "description": "Associate arrays for JavaScript.",
+  "description": "Associative arrays for JavaScript.",
   "version": "0.0.2",
   "author": "Josep M. Bach <josep.m.bach@gmail.com>",
   "keywords": ["associative", "arrays"],
