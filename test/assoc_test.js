@@ -85,5 +85,5 @@ testosterone
   })
 
   .run(function () {
-    require('sys').print('done!');
+    require('util').print('done!');
   });
