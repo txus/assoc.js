@@ -84,6 +84,27 @@ testosterone
     assert.equal(array.rassoc('b'), 'a');
   })
 
+  .add('#push updates the lookup table correctly', function () {
+    var array = new AssociativeArray([['a', 'b'], ['c', 'd']]);
+
+    array.push(['x', 'y']);
+    array.push(['x', 'z']);
+    array.push(['a', 'q']);
+
+    assert.deepEqual(array.lookup_table, { 'a': [0, 4], 'c': [1], 'x': [2, 3] });
+  })
+
+  .add('#unshift updates the lookup table correctly', function () {
+    var array = new AssociativeArray([['a', 'b'], ['c', 'd']]);
+
+    array.unshift(['x', 'y']);
+    array.unshift(['x', 'z']);
+    array.unshift(['a', 'q']);
+
+    console.log(array.lookup_table)
+    assert.deepEqual(array.lookup_table, { 'a': [0, 3], 'c': [4], 'x': [1, 2] });
+  })
+
   .run(function () {
     require('util').print('done!');
   });
