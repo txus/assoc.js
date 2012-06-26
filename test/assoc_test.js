@@ -101,7 +101,6 @@ testosterone
     array.unshift(['x', 'z']);
     array.unshift(['a', 'q']);
 
-    console.log(array.lookup_table)
     assert.deepEqual(array.lookup_table, { 'a': [0, 3], 'c': [4], 'x': [1, 2] });
   })
 
