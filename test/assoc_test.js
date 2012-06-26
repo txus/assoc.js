@@ -105,6 +105,18 @@ testosterone
     assert.deepEqual(array.lookup_table, { 'a': [0, 3], 'c': [4], 'x': [1, 2] });
   })
 
+  .add('#pop should return the last element of the array', function () {
+    var array = new AssociativeArray([['a', 'b'], ['c', 'd']]);
+
+    assert.deepEqual(array.pop(), ['c', 'd']);
+  })
+
+  .add('#shift should return the first element of the array', function () {
+    var array = new AssociativeArray([['a', 'b'], ['c', 'd']]);
+
+    assert.deepEqual(array.shift(), ['a', 'b']);
+  })
+
   .run(function () {
     require('util').print('done!');
   });
