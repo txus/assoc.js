@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/txus/assoc.js.png)](http://travis-ci.org/txus/assoc.js)
 # assoc.js
 
 Simple associative arrays for Javascript!
